@@ -6,13 +6,15 @@ import About from "./pages/About";
 import Navbar from "./components/Navbar";
 export default function App() {
   return (
-    <Container>
+    <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </Container>
+      <Container>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Container>
+    </>
   );
 }
